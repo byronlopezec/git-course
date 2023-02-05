@@ -4,7 +4,7 @@
 		git add -A;\
 		git add .;\
 		git status;\
-		git commit -m '$1' ;\
+		git commit -m \"$1\" ;\
 		git pull origin $CURRENT_BRANCH;\
 		git push origin $CURRENT_BRANCH;\
 		};f"
