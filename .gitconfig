@@ -1,14 +1,18 @@
 [alias]
 	acp = "!f(){\
+		CURRENT_BRANCH=$(git symbolic-ref --short HEAD);\
 		git add -A;\
 		git add .;\
 		git status;\
-		git commit -m \"$1\" ;\
-		git pull;\
-		git push;\
+		git commit -m '$1' ;\
+		git pull origin $CURRENT_BRANCH;\
+		git push origin $CURRENT_BRANCH;\
 		};f"
 		  
 	
 [user]
+	email = byron.lopez.begins@gmail.com
+	name = Buhobyte
+
 	email = byron.lopez.begins@gmail.com
 	name = Buhobyte
