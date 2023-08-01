@@ -11,4 +11,6 @@ git commit --amend -m "modifica el titulo del anterior commit"
 git commit --amend --no-edit # util para agregar archivos olvidados de agregar al anterior commit
 git diff # ver cambios de mi version
 git checkout -- .  # reconstruye el proyecto a como estaba el ultimo commit
-git reset --soft HEAD^1 # regresar a un commit anterior
+git reset --soft HEAD^1 # regresar a un commit anterior sin destruir actuales cambios 
+git reset --soft ea8cc70 # regresar a un commit ea8cc70 sin destruir los actuales cambios
+git reset --mixed 
