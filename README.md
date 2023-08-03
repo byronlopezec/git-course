@@ -10,10 +10,10 @@ git config --global alias.lg "log --graph --abbrev-commit --decorate --format=fo
 git commit --amend -m "modifica el titulo del anterior commit"
 git commit --amend --no-edit # util para agregar archivos olvidados de agregar al anterior commit
 git diff # ver cambios de mi version
-git checkout -- .  # reconstruye el proyecto a como estaba el ultimo commit
+git checkout -- .  # reconstruye el proyecto a como estaba el ultimo commit, conserva nuevos archivos pero no cambios
 git reset --soft HEAD^1 # regresar a un commit anterior sin destruir actuales cambios 
 git reset --soft ea8cc70 # regresar a un commit ea8cc70 sin destruir los actuales cambios
-git reset --mixed ea8cc70 # regredar al commit ea8cc70 sin destruir cambios pero similar a soft 
+git reset --mixed ea8cc70 # regresar al commit ea8cc70 sin destruir cambios pero similar a soft 
 git reset --hard <idcommit> #ir al commit idcommit y destuir cualquier cambio actual.
-git reset --hard # similar git checkout -- . para restablecer proyecto sin conservar cambios
+git reset --hard # similar git checkout -- . para restablecer proyecto conservando nuevos archivos
 git reflog # lista los commit realizados en order
