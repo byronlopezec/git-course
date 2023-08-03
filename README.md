@@ -13,4 +13,7 @@ git diff # ver cambios de mi version
 git checkout -- .  # reconstruye el proyecto a como estaba el ultimo commit
 git reset --soft HEAD^1 # regresar a un commit anterior sin destruir actuales cambios 
 git reset --soft ea8cc70 # regresar a un commit ea8cc70 sin destruir los actuales cambios
-git reset --mixed 
+git reset --mixed ea8cc70 # regredar al commit ea8cc70 sin destruir cambios pero similar a soft 
+git reset --hard <idcommit> #ir al commit idcommit y destuir cualquier cambio actual.
+git reset --hard # similar git checkout -- . para restablecer proyecto sin conservar cambios
+git reflog # lista los commit realizados en order
