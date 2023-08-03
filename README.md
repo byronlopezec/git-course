@@ -27,3 +27,6 @@ recursive -- se hace commits en master pero tambien se hacen commits en la nueva
 
 #tags hace referencia a nombrar o etiquetar un commit especifico 
 git tag <nombreTag> # nombramos un commit 
+git tag # listar tags de mi rama
+git tag -d <nombreTag> # eliminar tag
+git tag -a v1.0.0 -m "version 1.0.0 lista" # creo una nueva etiqueta y ademas coloco un comentario que describe la etiqueta
