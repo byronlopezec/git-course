@@ -23,3 +23,4 @@ git branch -d <nombreRama> # eliminar rama local
 git branch -d <nombreRama> - f # -f para forzar la eliminacion 
 // merge
 fast-forward -- union sin conflictos
+recursive -- se hace commits en master pero tambien se hacen commits en la nueva rama
